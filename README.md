@@ -27,6 +27,11 @@ Ce projet utilise un modèle de deep learning basé sur MobileNetV2 pour classer
 - Optimiseur : Adam
 - Perte : `sparse_categorical_crossentropy`
 
+## Précision sur la validation (val_accuracy) : 
+Généralement plus basse (par exemple, 20-50 %) en raison du faible nombre d'échantillons (4 pour la validation) 
+et des labels aléatoires, ce qui rend la validation instable et peu fiable.En raison des données fictives, les performances
+du modèle (par exemple, accuracy ~80-100 %, val_accuracy ~20-50 %) ne sont pas représentatives. Avec un jeu de données réel et diversifié, on pourrait s'attendre à une précision de validation d'environ 60-75 % pour ce type de modèle, mais cela nécessite un entraînement sur des images variées et correctement étiquetées.
+
 ## 📁 Émotions ciblées
 
 - 😄 joie  
